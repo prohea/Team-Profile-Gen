@@ -1,6 +1,7 @@
 # Team-Profile-Gen
 
 ## Description
+Generate a webpage that displays team's basic info
 
 ## Acceptance Criteria
 
@@ -29,5 +30,6 @@ THEN I exit the application, and the HTML is generated
 ## Resources
 
 ## Technologies Used
+node, inquirer
 
 ## Deployed Project
