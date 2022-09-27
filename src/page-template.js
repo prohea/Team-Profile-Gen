@@ -6,15 +6,15 @@ function createHTML (teamMembers) {
         <meta charset="UTF-8"/>
         <title>Team Profile Generator</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-        <link rel=stylesheet" href="./dist/style.css">
+        <link rel="stylesheet" href="./dist/style.css">
     </head>
-    <body>
-    <div class="jumbotron jumbotron-fluid">
-  <div class="container">
+    <body class="bg-dark">
+    <div class="jumbotron jumbotron-fluid bg-info custom-jumbotron">
+  <div class="container bg-info">
     <h1 class="display-4">Team</h1>
   </div>
 </div>
-<div class="container">
+<div class="container ">
     <div class="row">
         <div class="main-section col-12 d-flex justify-content-center">
             ${createTeam(teamMembers)}
@@ -31,7 +31,7 @@ function createHTML (teamMembers) {
 function createTeam(teamMembers) {
     function createManager(manager) {
         return `
-        <div class="card employee-card manager-card" style="width: 18rem;">
+        <div class="card employee-card manager-card  custom-card" style="width: 18rem;">
             <div class="card-header">
              <h2 class="card-title">${manager.getName()}</h2>
              <h4 class="card-text">Role: ${manager.getRole()}</h4>
@@ -47,7 +47,7 @@ function createTeam(teamMembers) {
         `;};
      function createEngineer(engineer) {
         return `
-        <div class="card employee-card engineer-card" style="width: 18rem;">
+        <div class="card employee-card engineer-card custom-card" style="width: 18rem;">
         <div class="card-header">
          <h2 class="card-title">${engineer.getName()}</h2>
          <h4 class="card-text">Role: ${engineer.getRole()}</h4>
@@ -63,7 +63,7 @@ function createTeam(teamMembers) {
         `;};
      function createIntern(intern) {
         return `
-        <div class="card employee-card intern-card" style="width: 18rem;">
+        <div class="card employee-card intern-card custom-card" style="width: 18rem;">
         <div class="card-header">
          <h2 class="card-title">${intern.getName()}</h2>
          <h4 class="card-text">Role: ${intern.getRole()}</h4>

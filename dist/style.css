@@ -11,7 +11,7 @@
     background-color: var(--dark);
   }
 
-  .jumbotron {
+  .custom-jumbotron {
     background-color: var(--blue);
   }
 
@@ -45,7 +45,7 @@
     border: 8px solid var(--blue);
   }
 
-  card-body {
+  .card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
