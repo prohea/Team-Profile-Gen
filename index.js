@@ -221,8 +221,12 @@ function getIntern() {
         teamMembers.push(intern);
         addMember();
     });
-
+    function generateHTML() {
+        console.log('Generating Team Profile');
+        fs.writeFileSync(output, template(teamMembers), "utf-8");
+    }
+    getManager();
 }
-    
+getMembers();
 }
     }
