@@ -26,3 +26,13 @@ test("can get name with the get name function", () => {
     const e = new Employee(name)
     expect(e.getName()).toBe(name)
 })
+test("can get name id the get id function", () => {
+    const test = 100
+    const e = new Employee(test)
+    expect(e.getId()).toBe(test)
+})
+test("can get email with the get email function", () => {
+    const testEmail = "email@email.com"
+    const e = new Employee(testEmail)
+    expect(e.getEmail()).toBe(testEmail)
+})
