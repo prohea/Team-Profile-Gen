@@ -10,13 +10,13 @@ test('can set an instance of engineer', () => {
 
 test('can set a username with the constructor', () => {
     const userName = 'username'
-    const e = new Engineer(userName)
+    const e = new Engineer('Faith', 1, 'email@email.com', userName);
     expect(e.gitHub).toBe(userName)
 });
 
 test('can get username with the get name function', () => {
     const userName = 'username'
-    const e = new Engineer(userName)
+    const e = new Engineer('Faith', 1, 'email@email.com', userName);
     expect(e.getGitHub()).toBe(userName)
 });
 })
