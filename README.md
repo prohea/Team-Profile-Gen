@@ -33,3 +33,4 @@ THEN I exit the application, and the HTML is generated
 node, inquirer
 
 ## Deployed Project
+[Team Profile Generator](https://prohea.github.io/Team-Profile-Gen/dist/index.html) Website
