@@ -1,0 +1,64 @@
+:root {
+    --blue: rgb(8, 8, 59);
+    --dark: black;
+    --teal: rgb(56, 105, 105);
+    --green: rgb(6, 49, 6);
+    --light: rgb(204, 193, 193);
+    --purple: rgb(55, 12, 75);
+  }
+
+  body {
+    background-color: var(--dark);
+  }
+
+  .jumbotron {
+    background-color: var(--blue);
+  }
+
+  .main-section {
+    flex-wrap: wrap;
+    margin: 1em auto;
+  }
+
+  .employee-card{
+    margin: 1em;
+    max-width: 300px;
+    width: 100%;
+    color: var(--light);
+    display: flex;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .manager-card{
+    background-color: var(--teal);
+    border: 8px solid var(--blue);
+  }
+
+  .engineer-card{
+    background-color: var(--green);
+    border: 8px solid var(--blue);
+  }
+
+  .intern-card{
+    background-color: var(--purple);
+    border: 8px solid var(--blue);
+  }
+
+  card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .manager-card .list-group-item {
+    background-color: var(--teal);
+  }
+
+  .engineer-card .list-group-item {
+    background-color: var(--green);
+  }
+
+  .intern-card .list-group-item {
+    background-color: var(--purple);
+  }
